@@ -1,0 +1,29 @@
+.tooltip__content
+  #tooltip1
+    .row.tooltip__row
+      .col-24.col-md-5
+        .tooltip__image
+          img.img-fluid(src=page.purchase.tooltip1.img.src, alt=page.purchase.tooltip1.img.alt)
+      .col-24.col-md-19
+        .tooltip__title!= page.purchase.tooltip1.heading
+        ul.tooltip__list
+          each item in page.purchase.tooltip1.items
+            li.tooltip__item!= item
+  #tooltip2
+    .row.tooltip__row
+      .col-24.col-md-5
+        .tooltip__image
+          img.img-fluid(src=page.purchase.tooltip2.img.src, alt=page.purchase.tooltip2.img.alt)
+      .col-24.col-md-19
+        .tooltip__title!= page.purchase.tooltip2.heading
+        ul.tooltip__list
+          each item in page.purchase.tooltip2.items
+            li.tooltip__item!= item
+  #tooltip3
+    .row.tooltip__row
+      .col-24
+        .tooltip__text!=page.make.tooltip 
+  #tooltip4
+    .row.tooltip__row
+      .col-24
+        .tooltip__text!=page.produce.tooltip       

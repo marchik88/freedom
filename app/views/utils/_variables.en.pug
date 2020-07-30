@@ -1,0 +1,507 @@
+- var page = {}
+- var hostname = "/" //- site domen name
+
+- 
+  var content = 
+    {
+      site: {
+        lang: "en",
+        hostname: hostname, //- site domen name
+        author: "Tagopen",
+        meta: {
+          charset: "utf-8",
+          favicon: "favicon.ico",
+          appleTouchIcon: "favicon.ico"
+        },
+        nav: {
+          links: [
+            {
+              href: "/link1",
+              displayName: "Link 1"
+            },
+
+            {
+              href: "/link2",
+              displayName: "Link 2"
+            }
+          ]
+        },
+        navRight: {
+          links: [
+            {
+              href: "/link3",
+              displayName: "Link 3"
+            },
+
+            {
+              href: "/link4",
+              displayName: "Link 4"
+            },
+          ]
+        }
+      }, //- site
+      indexEN: {
+        hostname: "index.html",
+        title: "Main Page",
+        meta: {
+          description: "",
+          keywords: "",
+          openGraph: {
+            title: "Site name",
+            siteName: "Site name",
+            description: "Описание сайта",
+            type: "website",
+            locale: "en_EN",
+            image: "microformat.png",
+            imageType: "image/png",
+            url: hostname
+          },
+          twitter: {
+            card: "summary",
+            site: "@flickr",
+            title: "My Site",
+            description: "My Site is cool",
+            image: hostname + "/img/logo/microformat.png"
+          }
+        },
+        nav: {
+          logo: {
+            src: "img/logo/logo.png",
+            alt: "Лого",
+          },
+          logo2: {
+            src: "img/logo/logo-horizontal-en.png",
+            alt: "Лого",
+          },
+          contact: {
+            text: "<span class=\"contact__text--span\"> \\ </span>0 (98) 860 23 43",
+            href: "tel\:(988602343"
+          }
+        },
+        header: {
+          title: "Production of natural sunflower oil and high- protein sunflower meal",
+          subtitle: "United by the sun"
+        },
+        intro: {
+          heading: "Our oil extracting factory <span class=\"heading--span\">Potoki</span> is dealing with the manufacturing of two basic types of output products:",
+          tabs: {
+            btn1: "sunflower oil",
+            btn2: "high-protein sunflower meal",
+            text1: "We have reached a high level of production with modern equipment and latest technologies of low-temperature extraction. Sunflower seeds undergo maximum pressing and our oil turns to be extremely concentrated. The innovational equipment makes it possible to produce unique high protein sunflower meal which has no analogues in the world in its chemical composition.",
+            text2: "",
+            img1: {
+              src: "img/intro1.png",
+              alt: "oil"
+            },
+            img2: {
+              src: "img/intro2.svg",
+              alt: "meal"
+            }
+          }
+        },
+        purchase: {
+          heading: "Purchasing the best oil plants",
+          text: "We manufacture our products from oil plant seeds (<span class=\"purchase__text--span tooltipstered\" data-tooltip-content=\"#tooltip2\">sunflower</span>, <span class=\"purchase__text--span tooltipstered\" data-tooltip-content=\"#tooltip1\">soya</span>) with high fat content. All raw materials are thoroughly inspected in our own laboratory of incoming control and we process the best species only.",
+          tooltip1: {
+            heading: "Basic specifications of soya beans:",
+            img: {
+              src: "img/tooltip1.png",
+              alt: "Oil"
+            },
+            items: [
+              "- moisture –12 %;",
+              "- foreign material – 2 %;",
+              "- oil admixtures – 6 %;",
+              "-  infestation – none.",
+            ]
+          },
+          tooltip2: {
+            heading: "Basic specifications of sunflower seeds:",
+            img: {
+              src: "img/tooltip2.png",
+              alt: "Meal"
+            },
+            items: [
+              "- moisture –8.0 %;",
+              "- foreign material – 3 %;",
+              "- oil content – 45 %;",
+              "- oil admixtures – 7 %;",
+              "- infestation – none.",
+            ]
+          },
+        },
+        make: {
+          heading: "We manufacture sunflower oil",
+          subheading: "<span class=\"purchase__text--span tooltipstered\" data-tooltip-content=\"#tooltip3\">Sunflower oil</span> produced by us has a high fat content. It has a strong smell of fresh sunflower kernels and a pleasant natural taste.",
+          img: {
+            src: "img/make1.png",
+            alt: "Миска"
+          },
+          text: " The product contains fully preserved:",
+          info1: "vitamin E",
+          info2: "unsaturated fatty acids called vitamin F",
+          vitamin1: {
+            src: "img/vitamine.png",
+            alt: "Е",
+            text: "<span class=\"make__info--span\">vitamin E</span>"
+          },
+          vitamin2: {
+            src: "img/vitaminf.png",
+            alt: "F",
+            text: "unsaturated fatty acids called <span class=\"make__info--span\">vitamin F </span>"
+          },
+          tooltip: "<div class=\"tooltip__text\">sunflower oil hydrated class 1 meeting the requirements of DSTU 4492:2005 <span class=\"tooltip__text--span\">«Олія соняшникова»</span><div>"
+        },
+        produce: {
+          heading: "High-protein sunflower meal",
+          img: {
+            src: "img/produce.png",
+            alt: "High-protein meal"
+          },
+          tooltip: "<div class=\"tooltip__text\"><span class=\"tooltip__text--span\">Sunflower meal high protein</span> toasted non-pelleted meeting the requirements of DSTU 4638:2006<div>",
+          tab1: {
+            btn: "- High-protein sunflower meal",
+            text: "The technologies of our factory make it possible to produce <span class=\"purchase__text--span tooltipstered\" data-tooltip-content=\"#tooltip4\">unique high protein sunflower meal</span>. It is similar to soya meal in its composition and contains up to 46% of protein. It comprises a high concentration of amino acids, and methionine in particular which is favourable for raising young livestock, poultry and fish.",
+            title: "The composition of high protein unique meal:",
+            items: [
+              {
+                text: "<span class=\"produce__percent\">46%</span> - <span class=\"produce__elem--span\">protein</span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">2%</span> - <span class=\"produce__elem--span\">fat</span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">8%</span> - <span class=\"produce__elem--span\">moisture</span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">6%</span> - <span class=\"produce__elem--span\">fibre</span>"
+              }
+            ]
+          },
+          tab2: {
+            btn: "- Ordinary sunflower meal",
+            text: "Our factory also produces ordinary sunflower meal which differs in its formula from high protein one. It has a lot of nutrients necessary for pig, cattle and poultry breeding. The meal has phosphorus, vitamins B and E as well as other mineral substances.",
+            title: "The composition of sunflower meal:",
+            items: [
+              {
+                text: "<span class=\"produce__percent\">1,5-2%</span> - <span class=\"produce__elem--span\">oil</span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">39%</span> - <span class=\"produce__elem--span\">crude protein</span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">23%</span> - <span class=\"produce__elem--span\">fibre </span>"
+              },
+              {
+                text: "<span class=\"produce__percent\">9-11%</span> - <span class=\"produce__elem--span\">moisture</span>"
+              }
+            ]
+          }
+        },
+        info: {
+          heading: "By-products",
+          items: [
+            {
+              title: "Sunflower phosphatide concentrate ",
+              text: "is widely used in food industry to produce lecithin, applied in baking to improve the quality of bread. It is highly soluble in a human body, beneficial for protein-fat interaction and is a source to build organic phosphorus.",
+              img: {
+                src: "img/info1.svg",
+                alt: "info"
+              }
+            },
+            {
+              title: "Sunflower husk pellets",
+              text: "Produced from grinded sunflower husk seeds via high temperature pressing and without any binding additives. The heat of combustion of husk pellets can be compared with the heat capacity of brown coal.",
+              img: {
+                src: "img/info2.svg",
+                alt: "info"
+              }
+            }
+          ]
+        },
+        tech: {
+          heading: "Technologies, equipment",
+          slides: [
+            {
+              number: "01",
+              title: "The best equipment",
+              text: "We utilize the best equipment in the world in the branch of sunflower oil and meal production",
+              img: {
+                src: "img/slide1.svg",
+                alt: "The best equipment"
+              }
+            },
+            {
+              number: "02",
+              title: "High manufacturing volume",
+              text: "The manufacturing capacity of the factory enables us to process up to 1400 tons of sunflower seeds per day.",
+              img: {
+                src: "img/slide2.png",
+                alt: "High manufacturing volume"
+              }
+            },
+            {
+              number: "03",
+              title: "Innovations",
+              text: "All technological processes of oil extraction and by-products are aimed at preserving the raw material primary properties: complete and balanced in caloric value and fat-acidic composition.",
+              img: {
+                src: "img/slide3.svg",
+                alt: "Innovations"
+              }
+            },
+            {
+              number: "04",
+              title: "Quality inspection",
+              text: "Each lot of output products is thoroughly checked to correspond to the product normative documents.",
+              img: {
+                src: "img/slide4.svg",
+                alt: "Quality inspection"
+              }
+            }
+          ],
+          count: "01 / 04"
+        },
+        people: {
+          heading: "People",
+          img: {
+            src: "img/illustration.png",
+            alt: "People"
+          },
+          text: "Our team unites the best specialists in their fields who are constantly improving their knowledge and skills. We support the corporative spirit, mutual help and sharing experience in all ways. Thanks to it, our collective works smooth and effectively.",
+          notify: "We cooperate with profile higher institutions participating in preparing a new generation of food industry engineers.",
+          btn: {
+            text: "Join our team"
+          }
+        },
+        mission: {
+          heading: "Mission",
+          descr: "Extracting the most precious from the gifts of the sun and preserving all beneficial properties presented by nature, we produce a good-quality, ecologically pure and useful product for all who care about their health!",
+          items: [
+            {
+              icon: "ic ic--medal",
+              heading: "The quality of our work",
+              text: "is our flawless reputation. That’s why we have a responsible approach to all work processes with no exception: technologies and manufacturing, product presentation and cooperation with our partners."
+            },
+            {
+              icon: "ic ic--protect",
+              heading: "Reliability",
+              text: "people trust us choosing our products and in our turn, we appreciate good relations with our clients showing honesty and a decent attitude at all interaction stages."
+            },
+            {
+              icon: "ic ic--gear",
+              heading: "Professional approach",
+              text: "to know one’s business well, to develop and realize one’s potential, to learn new things, to be open for innovations and to show initiative. These are the qualities of our employees, these are the qualities bringing us several steps ahead of others."
+            },
+            {
+              icon: "ic ic--people",
+              heading: "Team work",
+              text: "only a well adjusted collective is able to achieve the best result possible in work and that’s why we inspire and support the corporative spirit, mutual help and sharing experience and knowledge in all ways."
+            },
+          ]
+        },
+        transfer: {
+          heading: "Product storage and transportation",
+          img: {
+            src: "img/illustration.svg",
+            alt: "illustration"
+          },
+          text: "Raw material and output products are stored in warehouses which fully meet the standards specified in normative documents. Transportation is carried out by reliable companies which follow all transportation rules. Thanks to correct storage conditions, our products always remain fresh and don’t lose their quality.",
+          link: {
+            href: "#",
+            text: "Find out more about the product storage"
+          },
+          btn: {
+            text: "Transport cooperation"
+          }
+        },
+        question: {
+          heading: "Ask us a question",
+          form: {
+            name: {
+              placeholder: "Enter your name"
+            },
+            phone: {
+              placeholder: "Enter your phone number"
+            },
+            email: {
+              placeholder: "Enter your email address"
+            },
+            select: {
+              placeholder: "Specify the question topic",
+              items: [
+                "Offer",
+                "Wishes",
+                "Transport",
+                "Raw material",
+                "Products",
+                "Work",
+              ]
+            },
+            message: {
+              placeholder: "Enter the text"
+            },
+            submit: {
+              text: "Send",
+              value: "Question / Proposal / Wishlist",
+              loading: "<i class='fa fa-circle-o-notch fa-spin'></i> File sending..."
+            },
+            notify: "We guarantee complete confidentiality of your data"
+          }
+        },
+        map: {
+          img: {
+            src: "img/map.svg",
+            alt: "Карта"
+          },
+          bubble: {
+            heading: "Contact us",
+            items: [
+              {
+                icon: "map-pin",
+                key: "Address:",
+                value: {
+                  text: "9, Baykalska st., Dnipro, Ukraine"
+                }
+              },
+              {
+                icon: "phone",
+                key: "Phone:",
+                value: {
+                  link: {
+                    href: "tel:0988602343",
+                    text: "0 (98) 860 23 43"
+                  }
+                }
+              },
+              {
+                icon: "email",
+                key: "Email:",
+                value: {
+                  link: {
+                    href: "mailto:info@mez.com.ua",
+                    text: "info@mez.com.ua"
+                  }
+                }
+              },
+            ]
+          }
+        },
+        footer: {
+          copyright: {
+            text: "Made cordially by the studio WELL DONE",
+            img: {
+              src: "img/logo/well-done.png",
+              alt: "well-done",
+            }
+          }
+        },
+        modal: {
+          call: {
+            heading: "fill the form",
+            descr: "we will contact you within 15 minutes",
+            submit: {
+              text: "",
+              value: "Call back order"
+            }
+          },
+          transfer: {
+            heading: "product storage",
+            text: [
+              "Sunflower and soya meals are kept in warehouses equipped with supply and exhaust ventilation systems. The rooms have sufficient air flow, are clean, dry, not infested by bread damaging insects, protected from the sunlight and heating. The meal produced is stored in bulk or in bags.",
+              "Sunflower oil is stored in special reservoirs designed for this purpose following all norms and rules of keeping food products. The tanks and reservoirs for keeping oil are cleaned in terms required by normative documents (not less than once per year)."
+            ],
+            title: {
+              text: "Find out more about cooperation options with the oil extraction factory ",
+              modify: "«Потоки»"
+            },
+            subheading: "Please leave your contacts if you would like to offer us transport cooperation"
+          },
+          product: {
+            heading: "product storage",
+            text: [
+              "Sunflower and soya meals are kept in warehouses equipped with supply and exhaust ventilation systems. The rooms have sufficient air flow, are clean, dry, not infested by bread damaging insects, protected from the sunlight and heating. The meal produced is stored in bulk or in bags.",
+              "Sunflower oil is stored in special reservoirs designed for this purpose following all norms and rules of keeping food products. The tanks and reservoirs for keeping oil are cleaned in terms required by normative documents (not less than once per year)."
+            ],
+            img: {
+              src: "img/barrel.jpg",
+              alt: "barrel"
+            }
+          },
+          work: {
+            heading: "Find out about possible vacancies in our factory",
+            descr: " Leave your contacts to find out about vacancies and offer your candidacy to our team!",
+            submit: {
+              text: "Find out about vacancies",
+              value: "Application for vacancy"
+            }
+          },
+          communication: {
+            title: {
+              text: "Find out more about cooperation opportunities with the oil extraction factory “Potoki”",
+            },
+            subheading: "Leave your contact details if you want to cooperate with our factory",
+            submit: {
+              value: "Proposal for Transport",
+              text: "Offer cooperation"
+            }
+          },
+          form: {
+            title: {
+              text: "Заполните форму",
+            },
+            subheading: "и мы свяжемся с вами в течение 15 минут",
+            btn: {
+              text: "Предложить возможность сотрудничества"
+            }
+          },
+
+        }
+      }, //- index
+      successEN: {
+        hostname: "success.html",
+        title: "Form submitted",
+        meta: {
+          description: "",
+          keywords: "",
+          openGraph: {
+            title: "Site name",
+            siteName: "Site name",
+            description: "Описание сайта",
+            type: "website",
+            locale: "en_EN",
+            image: "microformat.png",
+            imageType: "image/png",
+            url: hostname
+          },
+          twitter: {
+            card: "summary",
+            site: "@flickr",
+            title: "My Site",
+            description: "My Site is cool",
+            image: hostname + "/img/logo/microformat.png"
+          }
+        },
+        nav: {
+          logo: {
+            src: "img/logo/logoen.png",
+            alt: "Лого",
+          },
+          logo2: {
+            src: "img/logo/logo-horizontal-en.png",
+            alt: "Лого",
+          },
+          contact: {
+            text: "<span class=\"contact__text--span\"> \\ </span>0 (98) 860 23 43",
+            href: "tel\:0988602343"
+          }
+        },
+        header: {
+          title: "We will contact you shortly",
+          subtitle: "Thank you for the application left!",
+          btn: {
+            href: "index.html",
+            text: "Go back to the main page"
+          }
+        },
+      }, //- success.html
+    }

@@ -1,0 +1,30 @@
+header.header
+  .container.container--no-padding
+    nav.navbar
+      a.logo.nav__logo
+        img.img-fluid(src!=page.nav.logo.src, alt!=page.nav.logo.alt)
+      button.navbar-toggler.second-button(type='button' data-toggle='collapse' data-target='#navbarSupportedContent23' aria-controls='navbarSupportedContent23' aria-expanded='false' aria-label='Toggle navigation')
+        .animated-icon2
+          span
+          span
+          span
+          span
+      .nav__box
+        a.nav__lang.nav__lang--ru(href="index.html", class=content.site.lang === "ru" ? "nav__lang--active" : undefined) RU
+        a.nav__lang.nav__land--en(href="indexEN.html", class=content.site.lang === "en" ? "nav__lang--active" : undefined) EN    
+      #navbarSupportedContent23.collapse.navbar-collapse
+        // Links
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Featuresss
+          li.nav-item
+            a.nav-link(href='#') Pricing
+                  
+  
+      
+
+
